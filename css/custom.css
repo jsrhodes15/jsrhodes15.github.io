@@ -2,6 +2,21 @@
 	max-width: 900px;
 }
 
+.container h1 {
+	padding-bottom: .2em;
+	font-size: 5em;
+}
+
+.text-container {
+	height: 40px;
+	line-height: 20px;
+}
+
+.text-container h2 {
+	vertical-align: middle;
+	display: inline-block;
+} 
+
 #the-top {
-	margin-top: 45px;
+	margin-top: 8em;
 }
