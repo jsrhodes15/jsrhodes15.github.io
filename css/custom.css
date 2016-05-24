@@ -3,20 +3,61 @@
 }
 
 .container h1 {
-	padding-bottom: .2em;
+/*	padding-bottom: .2em;*/
 	font-size: 5em;
 }
 
-.text-container {
-	height: 40px;
-	line-height: 20px;
+.custom-container {
+	padding-top: 1em;
+	padding-bottom: 3em;
 }
 
-.text-container h2 {
-	vertical-align: middle;
-	display: inline-block;
-} 
+.text-left {
+	margin-top: 0;
+}
+
+.my-name {
+	margin-bottom: 3px;
+}
+
+.nav-pills {
+        float: none;
+        text-align: center;
+    }
+.nav-pills > li {
+        float: none;
+    }
+.nav-pills > li {
+        display: inline;
+    }
+.nav-pills > li > a {
+        display: inline-block;
+    }
 
 #the-top {
 	margin-top: 8em;
+}
+
+body {
+    padding: 30px 0px;
+}
+
+#lightbox .modal-content {
+		padding-top: 4em;
+    display: inline-block;
+    text-align: center;   
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+    
+    z-index:1032;
 }

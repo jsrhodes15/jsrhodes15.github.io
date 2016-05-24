@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,13 +26,14 @@
     <header>
     	<div class="container" id="the-top">
     		<img src="img/jordan_thats_me.jpg" alt="That's me, Jordan Rhodes" class="img-circle" id="profile">
-    		<h1>Jordan Rhodes</h1>
+    		<h1 class="my-name">Jordan Rhodes</h1>
+        <h2 class="text-left"><small>Software Developer</small></h2>
     		<!-- links to important places -->
     		<div class="row">
-          <div class="col-xs-6 col-md-4 text-container">
-            <h2 class="text-left"><small>Software Developer</small></h2>
+          <div class="col-xs-6 col-md-2 text-container">
+            
           </div>
-          <div class="col-xs-12 col-md-8">
+          <div class="col-xs-12 col-md-8 center">
             <ul class="nav nav-pills">
     				  <li role="presentation" class="active"><a href="https://github.com/jsrhodes15">github</a></li>
     				  <li role="presentation" class="active"><a href="https://www.linkedin.com/in/jordan-rhodes-17235bb4">linkedin</a></li>
@@ -43,45 +45,55 @@
     	</div>
     </header>
     <main>
+
     <div class="container custom-container">
     	<div class="row">
+        <div class="col-xs-12 col-md-12 custom-container">
+           <p>I am an software developer with a lot of love for the entire stack. With that said, I must admit that I lean a little towards the backend. The most appealing aspect of programming is the I will never be done learning. I have been in the industry for just under a year, and have already had the opportunity to work with some very exciting technologies.</p>
+           <p>My favorite language is Ruby. Along with that, I enjoy working with Javascript, HTML5, CSS3 (with a little SASS in the mix'), and SQL. While I am constantly working to strengthen my proficiency in those language, I love working with Rails, Git Heroku, Unix, Wordpress, and Bootstrap.</p>
+           <p>I am fortunate to have been shown the ropes by a couple of extremely talented software engineers, which has afforded me the opportunity to have worked on some large projects early on in my career.</p>
+           <p>When I am not at the computer, I spend as much time as possible with my beautiful family. Baseball was my first love, and I still have my glove in the trunk of my car, just in case. I also enjoy reading, building things, and being outside. </p>
 
-        <div class="col-sm-6 col-md-4">
-    			<div class="thumbnail">
-      			<img src="img/coilbutter.png" alt="...">
-      			<div class="caption">
-        			<h3>Thumbnail label</h3>
-        			<p>...</p>       			
-      			</div>
-    			</div>
-  			</div>
-			
-  			<div class="col-sm-6 col-md-4">
-    			<div class="thumbnail">
-      			<img src="img/twittier.png" alt="...">
-      			<div class="caption">
-        			<h3>Thumbnail label</h3>
-        			<p>...</p>       			
-      			</div>
-    			</div>
-  			</div>
-			
-  			<div class="col-sm-6 col-md-4">
-    			<div class="thumbnail">
-      			<img src="img/wevue.png" alt="...">
-      			<div class="caption">
-        			<h3>Thumbnail label</h3>
-        			<p>...</p>        			
-      			</div>
-    			</div>
-  			</div>
+        </div>    
+      </div>
+      
+      <div class="container">
+        <div class="col-xs-12 col-md-6">
+          <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+              <img src="img/coilbutter.png" alt="coilbutter.com">
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="img/twittier.png" alt="twittier.herokuapp.com">
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="img/wevue.png" alt="wevue.com">
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="img/hammock.png" alt="Home made and hand woven hammock.">
+          </a>
+        </div>
+      </div>
 
-			</div>
-  	</div>
-  	</main>
-  	<footer>
+      <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+          <div class="modal-content">
+            <div class="modal-body">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer>
 
-  	</footer>
-
+    </footer>
   </body>
 </html>
