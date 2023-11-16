@@ -44,21 +44,27 @@ body {
 }
 
 #lightbox .modal-content {
-		padding-top: 4em;
+    padding-top: 4em;
     display: inline-block;
-    text-align: center;   
+    text-align: center;
 }
 
 #lightbox .close {
     opacity: 1;
     color: rgb(255, 255, 255);
     background-color: rgb(25, 25, 25);
-    padding: 5px 8px;
+    padding: 0 8px 5px 8px;
     border-radius: 30px;
+    height: 35px;
+    line-height: 10px;
     border: 2px solid rgb(255, 255, 255);
     position: absolute;
     top: -15px;
     right: -55px;
-    
+
     z-index:1032;
+}
+
+.image-thumb {
+    aspect-ratio: 9/6
 }
